@@ -1,36 +1,42 @@
-class Usuario {
-    constructor(nombre, apellido, libro, mascotas) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.libro = libro;
-        this.mascotas = mascotas;
-    }
+const {Contenedor} = require('./contenedor')
 
-    getFullName() {
-        return `${this.nombre} ${this.apellido}`;
-    }
+(async () => {
+    const products = new Contenedor('./products.json')
 
-    addMascota(newMascota) {
-        this.mascotas.push(newMascota);
-    }
+    let result = ``
+
+    result = await products.save({
+        title: 'Producto 1', 
+        price: 15.5,
+        thumbnail: 'https://via.placeholder.com/150',
+    })
+    console.log(result)
     
-    countMascotas() {
-        return this.mascotas.length;
-    }
-    
-    addBook(nombre, autor) {
-        this.libro.push({nombre: nombre, autor: autor});
-    }
+    result = await products.save({
+        title: 'Producto 2',
+        price: 20.5,
+        thumbnail: 'https://via.placeholder.com/150',
+    })
+    console.log(result)
 
-    getBookNames() {
-        return this.libro.map((el) => el.nombre);
-    }
-}
+    result = await products.save({
+        title: 'Producto 3',
+        price: 25.5,
+        thumbnail: 'https://via.placeholder.com/150',
+    })
+    console.log(result)
 
-const usuario1 = new Usuario('Juan', 'Perez', [{nombre: 'Js', autor: 'JP'}], ['Libra']);
+    result = await products.getById(2)
+    console.log("Producto 2: ", result)
 
-console.log (usuario1.getFullName());
-usuario1.addMascota('Perro');
-console.log (usuario1.countMascotas());
-usuario1.addBook('Abc', 'Pedro');
-console.log (usuario1.getBookNames());
+    result = await products.getAll()
+    console.log(result)
+
+    result = await products.deleteById(2)
+    console.log(result)
+
+    result = await products.deleteAll()
+    console.log(result)
+
+    // result = await products.getAll()
+})()
