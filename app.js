@@ -1,42 +1,28 @@
-const {Contenedor} = require('./contenedor')
+const express = require('express')
+const app = express()
+const Container = require('./container/container')
+let products = new Container('./products.txt')
 
-(async () => {
-    const products = new Contenedor('./products.json')
-
-    let result = ``
-
-    result = await products.save({
-        title: 'Producto 1', 
-        price: 15.5,
-        thumbnail: 'https://via.placeholder.com/150',
+// <-- End point products -->
+app.get('/productos', (req, res) => {
+    products.getProducts()
+    .then((data) => {
+        res.send(data)
     })
-    console.log(result)
-    
-    result = await products.save({
-        title: 'Producto 2',
-        price: 20.5,
-        thumbnail: 'https://via.placeholder.com/150',
+})
+
+// <-- End point prodRandom -->
+app.get('/prodRandom', (req, res) => {
+    products.getRandom()
+    .then((data) => {
+        res.send(data)
     })
-    console.log(result)
+})
 
-    result = await products.save({
-        title: 'Producto 3',
-        price: 25.5,
-        thumbnail: 'https://via.placeholder.com/150',
-    })
-    console.log(result)
+const PORT=8080
 
-    result = await products.getById(2)
-    console.log("Producto 2: ", result)
+const server = app.listen(PORT, () => {
+    console.log(`Se esta escuchando por el puerto ${PORT}`)
+})
 
-    result = await products.getAll()
-    console.log(result)
-
-    result = await products.deleteById(2)
-    console.log(result)
-
-    result = await products.deleteAll()
-    console.log(result)
-
-    // result = await products.getAll()
-})()
+server.on('error', err => console.log(`Erro en el servidor ${err}`))
