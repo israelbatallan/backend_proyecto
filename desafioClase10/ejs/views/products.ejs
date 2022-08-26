@@ -1,0 +1,22 @@
+<%- include('./partials/nav.ejs')  %>
+
+<h2>Lista de productos</h2>
+
+<table>
+    <thead>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Imagen</th>
+    </thead>
+    <tbody>
+        <% products.forEach(p => { %>
+            <tr>
+                <td><%= p.id %></td>
+                <td><%= p.title %></td>
+                <td><%= p.price %></td>
+                <td><a href="/products/details/<%= p.id %>"><img width="100px" src="<%= p.img %> "></a></td>
+            </tr>
+        <% }) %>
+    </tbody>
+</table>
