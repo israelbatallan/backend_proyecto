@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "name": "segundaentregafinal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "startJson": "node server.js json",
+    "startMongo": "node server.js mongodb",
+    "startFirebase": "node server.js firebase"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^11.0.1",
+    "mongodb": "^4.10.0",
+    "mongoose": "^6.6.2"
+  }
+}
