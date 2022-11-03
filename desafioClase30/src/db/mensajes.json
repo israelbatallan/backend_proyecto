@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "author": {
+      "email": "prueba@correo.com",
+      "nombre": "Juan",
+      "apellido": "Perez",
+      "edad": "30",
+      "alias": "Juanpa",
+      "avatar": "https://cdn.decrypt.co/resize/1536/wp-content/uploads/2021/10/bored-ape-nft-sothebys-record-sale-gID_4.png.webp",
+      "fecha": "5/10/2022, 13:10:29"
+    },
+    "text": "Buenas!",
+    "id_text": 1
+  },
+  {
+    "id": 2,
+    "author": {
+      "email": "prueba2@correo.com",
+      "nombre": "Jose",
+      "apellido": "Perez",
+      "edad": "20",
+      "alias": "Jos",
+      "avatar": "https://cdn.decrypt.co/wp-content/uploads/2022/01/bored-ape-yacht-club-9991-gID_2.jpg.webp",
+      "fecha": "5/10/2022, 13:12:16"
+    },
+    "text": "Hola!",
+    "id_text": 2
+  },
+  {
+    "id": 3,
+    "author": {
+      "email": "jp@correo.com",
+      "nombre": "Juan",
+      "apellido": "Perez",
+      "edad": "32",
+      "alias": "Juanpa",
+      "avatar": "https://cdn.decrypt.co/resize/1536/wp-content/uploads/2021/10/bored-ape-nft-sothebys-record-sale-gID_4.png.webp",
+      "fecha": "13/10/2022, 15:19:19"
+    },
+    "text": "abc",
+    "id_text": 3
+  }
+]
