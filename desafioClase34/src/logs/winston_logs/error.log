@@ -1,0 +1,10 @@
+{"body":"{\n  \"email\": \"asd@correo.com\",\n  \"nombre\": \"Juan\",\n  \"apellido\": \"Perez\",\n  \"edad\": \"30\",\n  \"alias\": \"ABC\",\n  \"avatar\": \"https://cdn.decrypt.co/resize/1536/wp-content/uploads/2021/10/bored-ape-nft-sothebys-record-sale-gID_4.png.webp\",\n}","expose":true,"level":"error","status":400,"statusCode":400,"type":"entity.parse.failed"}
+{"body":"{\n  \"email\": \"asd@correo.com\",\n  \"nombre\": \"Juan\",\n  \"apellido\": \"Perez\",\n  \"edad\": \"30\",\n  \"alias\": \"ABC\",\n  \"avatar\": \"https://cdn.decrypt.co/resize/1536/wp-content/uploads/2021/10/bored-ape-nft-sothebys-record-sale-gID_4.png.webp\",\n}","expose":true,"level":"error","status":400,"statusCode":400,"type":"entity.parse.failed"}
+{"level":"error","message":"Error Metodo: GET No existe el mensaje con id 22"}
+{"level":"error","message":"Error Metodo: DELETE No existe el mensaje con id 22"}
+{"level":"error","message":"Error Metodo: GET No existe el producto con id 10"}
+{"level":"error","message":"Error Metodo: GET No existe el mensaje con id 234"}
+{"level":"error","message":"Error Metodo: GET No existe el producto con id 9"}
+{"level":"error","message":"Error Metodo: GET No existe el producto con id 8"}
+{"level":"error","message":"Modo asd no implementado, usando FORK"}
+{"level":"error","message":"Error Metodo: GET Mensaje 344 no existe"}
