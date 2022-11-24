@@ -39,3 +39,4 @@
 {"level":"warn","message":"Ruta /api/mensajes-test y metodo GET no implementada"}
 {"level":"warn","message":"Ruta /api/css/style.css y metodo GET no implementada"}
 {"level":"warn","message":"Ruta /api/asdas y metodo GET no implementada - fyh: 9/10/2022, 14:46:27 "}
+{"level":"warn","message":"Ruta /favicon.ico y metodo GET no implementada - fyh: 24/11/2022, 17:31:15 "}
