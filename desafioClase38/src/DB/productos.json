@@ -1,0 +1,52 @@
+[
+  {
+    "id": 2,
+    "codigo": 2147483647,
+    "timestamp": "2022-11-09T14:18:40.334Z",
+    "nombre": " test2",
+    "descripcion": "test",
+    "precio": 333333,
+    "foto": "https://cdn.decrypt.co/wp-content/uploads/2022/01/bored-ape-yacht-club-9991-gID_2.jpg.webp",
+    "stock": 333333
+  },
+  {
+    "id": 3,
+    "codigo": 2147483647,
+    "timestamp": "2022-11-09T14:58:53.103Z",
+    "nombre": "test3",
+    "descripcion": "test",
+    "precio": 333,
+    "foto": "https://cdn.decrypt.co/wp-content/uploads/2022/01/bored-ape-yacht-club-9991-gID_2.jpg.webp",
+    "stock": 200
+  },
+  {
+    "id": 4,
+    "codigo": 2147483647,
+    "timestamp": "2022-11-09T15:05:04.686Z",
+    "nombre": "test4",
+    "descripcion": "test",
+    "precio": 23432,
+    "foto": "https://cdn.decrypt.co/wp-content/uploads/2022/01/bored-ape-yacht-club-9991-gID_2.jpg.webp",
+    "stock": 400
+  },
+  {
+    "id": 6,
+    "codigo": 2147483647,
+    "timestamp": "2022-11-09T15:47:16.821Z",
+    "nombre": "test6",
+    "descripcion": "test",
+    "precio": 500.54,
+    "foto": "https://cdn.decrypt.co/wp-content/uploads/2022/01/bored-ape-yacht-club-9991-gID_2.jpg.webp",
+    "stock": 200
+  },
+  {
+    "id": 16,
+    "codigo": 2147483647,
+    "timestamp": "2022-11-09T16:44:13.638Z",
+    "nombre": "test16",
+    "descripcion": "test",
+    "precio": 6666,
+    "foto": "https://cdn.decrypt.co/wp-content/uploads/2022/01/bored-ape-yacht-club-9991-gID_2.jpg.webp",
+    "stock": 3333
+  }
+]
